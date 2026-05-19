@@ -19,7 +19,11 @@ A multi-step fintech signup wizard built with React 19, TypeScript, and Vite. Th
 
 ## Screenshots
 
-_Add screenshots or a GIF of the full flow here._
+
+
+https://github.com/user-attachments/assets/eb48ba33-e5a5-421c-998e-c2bc45be5d5a
+
+
 
 ---
 
