@@ -1,0 +1,174 @@
+@use "@/styles/tokens" as *;
+
+.step {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-foreground);
+}
+
+.introStrong {
+  font-weight: 600;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.phoneField {
+  width: 100%;
+}
+
+.phoneLabel {
+  display: block;
+  margin-bottom: 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-label);
+}
+
+.phoneRequired {
+  margin-left: 0.25rem;
+  color: var(--color-destructive);
+}
+
+.phoneRow {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.phoneInput {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+.resend {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+}
+
+.resendButton {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+
+  &:focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    color: var(--color-muted-foreground);
+    cursor: not-allowed;
+    font-weight: 500;
+  }
+
+  &:not(:disabled):hover {
+    text-decoration: underline;
+  }
+}
+
+.success {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.successTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+}
+
+.checkIcon {
+  width: 4rem;
+  height: 4rem;
+  color: #16a34a;
+}
+
+.summary {
+  width: 100%;
+  text-align: left;
+}
+
+.summaryTable {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--color-neutral-550);
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.summaryLabel {
+  font-size: 0.75rem;
+  color: var(--color-foreground);
+}
+
+.summaryValue {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-foreground);
+  text-align: right;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.modalIcon {
+  width: 2.75rem;
+  height: 2.75rem;
+  color: #16a34a;
+}
+
+.modalHeading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-foreground);
+}
+
+.modalSubheading {
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+}
